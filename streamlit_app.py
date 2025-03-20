@@ -17,7 +17,7 @@ from st_aggrid import GridUpdateMode, DataReturnMode
 
 # all other imports
 import os
-from streamlit_elements import Elements
+from streamlit_elements import elements
 
 ###############################################################################
 
