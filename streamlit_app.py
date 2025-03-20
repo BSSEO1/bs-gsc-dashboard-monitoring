@@ -39,7 +39,7 @@ RowCap = 25000
 
 ###############################################################################
 
-tab1, tab2 = st.tabs(["Main", "About"])
+tab1 = st.tabs(["Main"])
 
 with tab1:
 
@@ -141,9 +141,9 @@ with tab1:
 
     st.sidebar.write("")
 
-    st.sidebar.caption(
-        "Made in 🎈 [Streamlit](https://www.streamlit.io/), by [Charly Wargnier](https://www.charlywargnier.com/)."
-    )
+    # st.sidebar.caption(
+    #     "Made in 🎈 [Streamlit](https://www.streamlit.io/), by [Charly Wargnier](https://www.charlywargnier.com/)."
+    # )
 
     try:
 
