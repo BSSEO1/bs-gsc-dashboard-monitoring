@@ -50,9 +50,9 @@ with tab1:
     st.write("")
 
     # Convert secrets from the TOML file to strings
-    clientSecret = str(st.secrets["service_account"]["client_email"])
-    clientId = str(st.secrets["service_account"]["client_id"])
-    redirectUri = str(st.secrets["service_account"]["redirect_uris"][0])
+    clientSecret = str(st.secrets["installed"]["client_email"])
+    clientId = str(st.secrets["installed"]["client_id"])
+    redirectUri = str(st.secrets["installed"]["redirect_uris"][0])
 
     st.markdown("")
 
@@ -92,7 +92,7 @@ with tab1:
         mt.show(key="687")
 
         credentials = {
-            "service_account": {
+            "installed": {
                 "client_id": clientId,
                 "client_secret": clientSecret,
                 "redirect_uris": [],
